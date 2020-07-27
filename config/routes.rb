@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   # 以下、編集にも確認画面を適用
   resources :blogs do
+    resources :comments
     collection do
       post :confirm
     end
